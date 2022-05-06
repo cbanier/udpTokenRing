@@ -14,7 +14,11 @@ Host *creerHost(port port_actuel, port port_suivant) {
     return host;
 }
 
+/* ************************************************************************** */
+
 void cleanHost(Host *h) { free(h); }
+
+/* ************************************************************************** */
 
 port getPortRecepteur(port port_actuel) {
     char port_tmp;
@@ -101,6 +105,8 @@ port getPortRecepteur(port port_actuel) {
          "recommencer : \n");
     return getPortRecepteur(port_actuel);
 }
+
+/* ************************************************************************** */
 
 void boucleHost(Host *h, Trame *t) {
     /* buffer */
